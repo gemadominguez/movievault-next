@@ -1,0 +1,64 @@
+.movie-card{
+    width: 252px;
+    height: 375px;
+    border-radius: 24px;
+    padding: 18px 14px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+
+
+.movie-card__rating{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+}
+
+.movie-card__title{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.movie-card__genre-tag {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap; 
+  }
+  
+/* Capa 1*/
+.movie-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    z-index: 0;
+  }
+  
+  /* Capa 2 */
+  .movie-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent);
+    z-index: 1;
+  }
+  
+  .movie-card__rating,
+  .movie-card__title,
+  .movie-card__genres {
+    position: relative;
+    z-index: 2;
+  }

@@ -1,0 +1,63 @@
+.loading {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .loading__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .loading__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loading__key{
+    width: 250px;
+  }
+  
+  .loading__text {
+    font-size: 24px;
+    color: white;
+    font-family: var(--font-header);
+    letter-spacing: 0.1em;
+  }
+  
+  .fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  

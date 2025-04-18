@@ -1,0 +1,30 @@
+.movie-info__genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+.movie-info__title {
+  padding: 28px 0px 14px 0px;
+}
+
+.movie-info__synopsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.movie-info__synopsis--full {
+  overflow: visible;
+  white-space: normal;
+}
+
+.movie-info__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

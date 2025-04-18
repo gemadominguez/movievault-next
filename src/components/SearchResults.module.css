@@ -1,0 +1,12 @@
+.search-title {
+    grid-column: span 12;
+    margin: 32px 0 16px;
+ 
+  }
+  
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
